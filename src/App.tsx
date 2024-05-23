@@ -7,6 +7,7 @@ import { TopLayer } from './Components/Pages/topLayer';
 import { BookPage } from './Components/Pages/bookPage';
 import BookPage2 from './Components/Pages/bookPage2';
 import Footer from './Components/Pages/footer';
+import { SearchProvider } from './Components/Pages/searchProvider';
 
 
 
@@ -15,8 +16,10 @@ function App() {
     <div className="h-screen w-screen font-mono">
    <Navbar/>
    <TopLayer/>
+   <SearchProvider>
    <BookPage/>
    <BookPage2/>
+   </SearchProvider>
    <Footer/>
     </div>
   );

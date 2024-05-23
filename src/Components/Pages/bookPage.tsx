@@ -1,12 +1,23 @@
-import React from 'react'
-import { bookCat } from '../../Content/bookDetails'
+import React, { useContext, useState } from 'react'
+import { bookCat, popularBook } from '../../Content/bookDetails'
 import Cat from '../../Icons/category.png'
+import { SearchContext } from '../../Content/searchContext';
+import search from '../../Icons/magnifying-glass.png'
 
 
 export const BookPage=()=> {
-   
+    const [searchValue, setSearchValue ] = useState('');
+
   return (
+    <>
+   <div className='flex justify-center w-full relative h-[8%] '>
+  <input type='text' placeholder='Search Book' className='border-2 border-black w-[50%] shadow-lg rounded-3xl p-2 pl-5' onChange={(e:any)=>{setSearchValue(e.target.value)}}/> 
+  <div className='p-2 rounded-2xl absolute right-[470px] top-1/2 transform -translate-y-1/2 w-[5%] cursor-pointer items-end flex'>
+    <img src={search} alt='search' className='w-[80%] h-[100%]'/>
+  </div>
+</div>
     <div className='mx-[5px] my-[20px] w-full h-[80%] flex '>
+
         <div className=' font-bold text-[22px] h-6 ml-10 flex justify-center gap-2'>
           Categories <img src={Cat} className='w-[100%] h-[100%]'></img> 
         </div>
@@ -35,5 +46,6 @@ export const BookPage=()=> {
             </div>
         ))}
     </div>
+    </>
   );
 }
