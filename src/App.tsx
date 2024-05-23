@@ -16,10 +16,8 @@ function App() {
     <div className="h-screen w-screen font-mono">
    <Navbar/>
    <TopLayer/>
-   <SearchProvider>
    <BookPage/>
    <BookPage2/>
-   </SearchProvider>
    <Footer/>
     </div>
   );
