@@ -14,7 +14,7 @@ import { LoginModal } from './Templates/loginModal';
 
 function App() {
   return (
-    <div className="h-screen w-screen font-mono">
+    <div className="h-screen w-screen font-mono ">
    <Navbar/>
    <TopLayer/>
    <BookPage/>
