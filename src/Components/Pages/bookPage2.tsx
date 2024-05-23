@@ -4,7 +4,7 @@ import { popularBook } from '../../Content/bookDetails'
 export default function BookPage2() {
   return (
     <>
-    <div className='w-full'>
+    <div className='w-full '>
         <div className='flex justify-center font-bold text-[40px]'>
             Popular Books
         </div>

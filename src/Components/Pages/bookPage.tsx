@@ -11,7 +11,7 @@ export const BookPage = () => {
 
   return (
     <>
-      <div className="flex justify-center w-full relative h-[8%] ">
+      <div className="flex justify-center w-full relative h-[8%]">
         <input
           type="text"
           placeholder="Search Book"
@@ -20,7 +20,7 @@ export const BookPage = () => {
             setSearchValue(e.target.value);
           }}
         />
-        <div className="p-2 rounded-2xl absolute right-[450px] top-1/2 transform -translate-y-1/2 w-[5%] cursor-pointer items-end flex">
+        <div className="p-2 rounded-2xl absolute right-[450px] top-1/2 transform -translate-y-1/2 w-[5%] cursor-pointer items-end flex ">
           <img src={search} alt="search" className="w-[50%] h-[100%]" />
         </div>
       </div>

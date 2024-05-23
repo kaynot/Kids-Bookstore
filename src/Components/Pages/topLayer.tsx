@@ -6,7 +6,7 @@ import kids4 from'../../Icons/kid4.png'
 
 export const TopLayer = () => {
   return (
-    <div className='my-[80px]  mx-[10px]'>
+    <div className='my-[80px]  mx-[10px] '>
         <div className='bg-gradient-to-b from-red-200 to-blue-200 flex justify-center '>
             <div className='text-black  text-8xl  w-[300px] h-[50px]'>
                 Books for Kids

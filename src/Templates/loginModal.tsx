@@ -23,7 +23,7 @@ return (
             onOk={handleOk}
             onCancel={handleCancel}
             okText={okText}
-            
+            className="font-mono"
         >
             <Form >
                 <Form.Item
